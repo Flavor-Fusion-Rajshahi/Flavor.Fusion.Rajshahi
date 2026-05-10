@@ -343,7 +343,7 @@ let currentFilter = "all", searchQuery = "";
 function renderProducts() {
     let filtered = products.filter(p => (currentFilter==='all' || p.category===currentFilter) && (!searchQuery || p.name.toLowerCase().includes(searchQuery.toLowerCase())));
     document.getElementById('productList').innerHTML = filtered.map(p => {
-        let stockStatus = (p.stock === 0) ? 'স্টক আউট' : 'স্টকে আছে';
+        let stockStatus = (p.stock === 0) ? 'Coming Soon' : 'স্টকে আছে';
         let stockClass = (p.stock === 0) ? 'out-stock' : 'in-stock';
         let disabledClass = (p.stock === 0) ? 'btn-disabled' : '';
         let disabledAttr = (p.stock === 0) ? 'disabled' : '';
