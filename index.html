@@ -158,19 +158,19 @@ const products = [
     { id:4, name:"তোতাপাহারি আম", price:120, sortOrder:5, img:"https://i.ibb.co.com/V0fJJBYC/Messenger-creation-43-F0-C07-F-E7-D6-4-D98-AD49-6-D20-ED89-C17-B.jpg", category:"mango", stock:0 },
     { id:5, name:"আম্রপালি আম", price:130, sortOrder:6, img:"https://i.ibb.co.com/mF9dNw7g/Messenger-creation-715-F8764-8620-4-A98-91-E5-C4-E6964-AD847.jpg", category:"mango", stock:0 },
     { id:6, name:"লক্ষণভোগ আম", price:90, sortOrder:7, img:"https://i.ibb.co.com/VFgC8rv/Messenger-creation-AD3-DF358-9-C56-472-B-8-BA0-111-ECB788-AD2.jpg", category:"mango", stock:0 },
-    { id:7, name:"গোপালভোগ আম", price:110, sortOrder:1, img:"https://i.ibb.co.com/sphmPJjr/images-31.jpg", category:"mango", stock:500 },
+    { id:7, name:"গোপালভোগ আম", price:120, sortOrder:1, img:"https://i.ibb.co.com/sphmPJjr/images-31.jpg", category:"mango", stock:500 },
 ];
 
 products.sort((a, b) => (a.sortOrder || 999) - (b.sortOrder || 999));
 
 // ছাড় কনফিগারেশন
 const KG_DISCOUNTS = {
-    '1_12_10': { minKg: 12, discountPerKg: 10 },
-    '2_12_10': { minKg: 12, discountPerKg: 10 },
-    '4_12_10': { minKg: 12, discountPerKg: 10 },
-    '5_12_10': { minKg: 12, discountPerKg: 10 },
-    '6_12_10': { minKg: 12, discountPerKg: 10 },
-    '7_12_10': { minKg: 12, discountPerKg: 10 },
+    '1_3_10': { minKg: 12, discountPerKg: 10 },
+    '2_3_10': { minKg: 12, discountPerKg: 10 },
+    '4_3_10': { minKg: 12, discountPerKg: 10 },
+    '5_3_10': { minKg: 12, discountPerKg: 10 },
+    '6_3_10': { minKg: 12, discountPerKg: 10 },
+    '7_3_10': { minKg: 12, discountPerKg: 10 },
 };
 
 function getKgDiscount(productId, kg) {
