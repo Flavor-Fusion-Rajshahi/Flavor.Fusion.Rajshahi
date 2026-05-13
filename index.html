@@ -463,8 +463,8 @@ window.submitCartOrder = async function() {
     
     if(pay === 'bkash') { trx = document.getElementById('cartTrxId')?.value.trim(); if(!trx){ showToast('TrxID দিন'); return; } } 
     else { trx = 'COD'; }
-   
-}
+    if(!name || !phone || !addr) { showToast('নাম, মোবাইল ও ঠিকানা দিন'); return; }
+    
     isCartSubmitting = true;
     const submitBtn = document.getElementById('submitCartOrderBtn');
     const originalText = submitBtn.innerHTML;
