@@ -463,11 +463,7 @@ window.submitCartOrder = async function() {
     
     if(pay === 'bkash') { trx = document.getElementById('cartTrxId')?.value.trim(); if(!trx){ showToast('TrxID দিন'); return; } } 
     else { trx = 'COD'; }
-    if(!name || !phone || !addr) { showToast('নাম, মোবাইল ও ঠিকানা দিন'); return; }
-    // মোবাইল নম্বর চেক
-if (!/^01[3-9]\d{8}$/.test(phone)) {
-    showToast("❌ সঠিক মোবাইল নম্বর দিন (01XXXXXXXXX)");
-    return;
+   
 }
     isCartSubmitting = true;
     const submitBtn = document.getElementById('submitCartOrderBtn');
