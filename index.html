@@ -167,20 +167,20 @@
 // পণ্য যোগ করুন এখানে (নতুন ওয়ার্কিং ইমেজ লিংক)
 // ==============================================
 const products = [
-    { id:1, name:"হিমসাগর আম", price:130, sortOrder:4, img:"https://i.ibb.co.com/Lh8PB5X0/Messenger-creation-7-FB83-CD1-3-C63-4-A53-8-F42-0-C8-CD61-A0230.jpg", category:"mango", stock:0 },
-    { id:2, name:"ল্যাংড়া আম", price:120, sortOrder:3, img:"https://i.ibb.co.com/Wv0VgwLW/Messenger-creation-F9-CE7560-9169-46-DA-815-F-BFBE1-E2-C8-C9-B.jpg", category:"mango", stock:0 },
-    { id:3, name:"বারি-৪ আম", price:130, sortOrder:6, img:"https://i.ibb.co.com/6R2psvd1/Messenger-creation-B4-C523-CA-BA01-4322-9-CDB-E5-AC2-F818260.jpg", category:"mango", stock:0 },
+    { id:1, name:"হিমসাগর আম", price:100, sortOrder:1, img:"https://i.ibb.co.com/Lh8PB5X0/Messenger-creation-7-FB83-CD1-3-C63-4-A53-8-F42-0-C8-CD61-A0230.jpg", category:"mango", stock:500 },
+    { id:2, name:"ল্যাংড়া আম", price:100, sortOrder:3, img:"https://i.ibb.co.com/Wv0VgwLW/Messenger-creation-F9-CE7560-9169-46-DA-815-F-BFBE1-E2-C8-C9-B.jpg", category:"mango", stock:0 },
+    { id:3, name:"বারি-৪ আম", price:110, sortOrder:6, img:"https://i.ibb.co.com/6R2psvd1/Messenger-creation-B4-C523-CA-BA01-4322-9-CDB-E5-AC2-F818260.jpg", category:"mango", stock:0 },
     { id:4, name:"তোতাপাহারি আম", price:120, sortOrder:7, img:"https://i.ibb.co.com/V0fJJBYC/Messenger-creation-43-F0-C07-F-E7-D6-4-D98-AD49-6-D20-ED89-C17-B.jpg", category:"mango", stock:0 },
-    { id:5, name:"আম্রপালি আম", price:130, sortOrder:5, img:"https://i.ibb.co.com/mF9dNw7g/Messenger-creation-715-F8764-8620-4-A98-91-E5-C4-E6964-AD847.jpg", category:"mango", stock:0 },
-    { id:6, name:"লক্ষণভোগ আম", price:90, sortOrder:2, img:"https://i.ibb.co.com/VFgC8rv/Messenger-creation-AD3-DF358-9-C56-472-B-8-BA0-111-ECB788-AD2.jpg", category:"mango", stock:0 },
-    { id:7, name:"গোপালভোগ আম", price:120, sortOrder:1, img:"https://i.ibb.co.com/sphmPJjr/images-31.jpg", category:"mango", stock:500 },
+    { id:5, name:"আম্রপালি আম", price:120, sortOrder:5, img:"https://i.ibb.co.com/mF9dNw7g/Messenger-creation-715-F8764-8620-4-A98-91-E5-C4-E6964-AD847.jpg", category:"mango", stock:0 },
+    { id:6, name:"লক্ষণভোগ আম", price:90, sortOrder:3, img:"https://i.ibb.co.com/VFgC8rv/Messenger-creation-AD3-DF358-9-C56-472-B-8-BA0-111-ECB788-AD2.jpg", category:"mango", stock:500 },
+    { id:7, name:"গোপালভোগ আম", price:100, sortOrder:2, img:"https://i.ibb.co.com/sphmPJjr/images-31.jpg", category:"mango", stock:500 },
 ];
 
 products.sort((a, b) => (a.sortOrder || 999) - (b.sortOrder || 999));
 
 // ছাড় কনফিগারেশন
 const KG_DISCOUNTS = {
-    '1_3_10': { minKg: 12, discountPerKg: 10 },
+    '1_0_0': { minKg: 12, discountPerKg: 10 },
     '2_3_10': { minKg: 12, discountPerKg: 10 },
     '4_3_10': { minKg: 12, discountPerKg: 10 },
     '5_3_10': { minKg: 12, discountPerKg: 10 },
